@@ -16,7 +16,7 @@ on:
         required: true
         default: 'Generic'
 env:
-  TELEGRAM_TO: 1214932938
+  TELEGRAM_TO: 6042760331
   TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
       - name: 发送 Telegram 提醒消息 1/2
         uses: appleboy/telegram-action@master
         with:
-         to: 1214932938
+         to: 6042760331
          token: ${{ secrets.TELEGRAM_TOKEN }}
          message: tosasitill GSI 开始构建！
                       构建开始时间：${{ env.BUILD_sTIME }}
@@ -90,7 +90,7 @@ jobs:
       - name: 发送 Telegram 提醒消息 2/2
         uses: appleboy/telegram-action@master
         with:
-            to: 1214932938
+            to: 6042760331
             token: ${{ secrets.TELEGRAM_TOKEN }}
             message: tosasitill GSI 构建成功!
               构建 GSI 详细信息如下！
